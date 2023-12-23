@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorisation</title>
+</head>
+
+<body>
+    <header style="background-color: beige;">
+        <nav>
+            <div class="logo-main">
+                <a href="../index.html"><img
+                        src="../../../../../../Hillel/3d_lesson/3d_dz/assets/img/bvc_header_logo.jpg" alt="Main logo"
+                        width="120"></a>
+            </div>
+            <div class="nav-menu">
+                <a href="./reg.html">Registration</a>
+                <a href="./search.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>Authorization form</legend>
+        <div class="auth-form">
+            <form action="../action.php" method="get">
+                <label for="name">Name or nick:</label>
+                <input type="text" name="name" id="name" required autocomplete="given-name"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd" required><br><br>
+                <input type="submit" value="LogIn">
+            </form>
+        </div>
+    </fieldset>
+    <footer style="background-color: aquamarine;">
+        <div class="schedule">
+            <p><b>Call-center schedule</b></p>
+            <p><i>Monday-Friday:</i> 09<sup>15</sup>-17<sup>45</sup></p>
+            <p><i>Saturday:</i> 10<sup>00</sup>-16<sup>00</sup></p>
+        </div>
+        <div class="address">
+            <p>60 Princess st</p><br>
+        </div>
+        <div class="contacts">
+            <a href="tel:4375571887">Call us</a>
+            <a href="mailto:marketpcar@hotmail.ca">Write to us</a>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
