@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorisation</title>
+</head>
+
+<body>
+    <header style="background-color: beige;">
+        <nav>
+            <div class="logo-main">
+                <a href="../index.html"><img
+                        src="../../../../../../Hillel/3d_lesson/3d_dz/assets/img/bvc_header_logo.jpg" alt="Main logo"
+                        width="120"></a>
+            </div>
+            <div class="nav-menu">
+                <a href="./auth.html">Authorisation</a>
+                <a href="./reg.html">Registration</a>
+            </div>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>Search my new auto</legend>
+        <form action="./action.php" method="get">
+            <div class="body">
+                <span><u>Type of body:</u></span>
+                <input type="radio" name="body" id="SUV" value="SUV">
+                <label for="SUV">SUV</label>
+                <input type="radio" name="body" id="comfort" value="comfort">
+                <label for="comfort">Comfort</label>
+                <input type="radio" name="body" id="4x4" value="4x4">
+                <label for="4x4">4x4</label>
+                <input type="radio" name="body" id="truck" value="truck">
+                <label for="truck">Truck</label>
+                <input type="radio" name="body" id="traktor" value="traktor">
+                <label for="traktor">Traktor</label>
+            </div>
+            <div class="country">
+                <label for="country"><u>Manufactered country:</u></label>
+                <select name="country" id="country">
+                    <option value="any">Any</option>
+                    <option value="japan">Japan</option>
+                    <option value="germany">Germany</option>
+                    <option value="italy">Italy</option>
+                    <option value="spain">Spain</option>
+                    <option value="ussr">USSR</option>
+                    <option value="france">France</option>
+                    <option value="usa">USA</option>
+                    <option value="gb">Great Britain</option>
+                </select>
+            </div>
+            <div class="makes">
+                <label for="makes"><u>Makes:</u></label>
+                <select name="makes" id="makes">
+                    <option value="allmakes">All Makes</option>
+                    <option value="acura">Acura</option>
+                    <option value="astonMartin">Aston Martin</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="vaz">VAZ</option>
+                    <option value="mercedes">Mercedes-Benz</option>
+                </select>
+            </div>
+            <div class="price">
+                <label for="price"><u>Price:</u></label>
+                <input type="number" name="pricemin" id="price" min="0" max="1000000" placeholder="min. price" step="1000">
+                <label for="price" hidden><u>Price maximum:</u></label>
+                <input type="number" name="pricemax" id="pricemax" min="0" max="1000000" placeholder="max. price" step="1000">
+            </div>
+            <div class="years">
+                <span><u>Years:</u></span>
+                <label for="mindate" hidden><u>from:</u></label>
+                <input type="date" name="mindate" id="mindate">
+                <label for="maxdate" hidden><u>to:</u></label>
+                <input type="date" name="maxdate" id="maxdate">
+            </div>
+            <div class="condition">
+                <span><u>Condition:</u></span>
+                <input type="checkbox" name="condition1" id="new" value="new">
+                <label for="new">New</label>
+                <input type="checkbox" name="condition2" id="used" value="used">
+                <label for="used">Used</label>
+                <input type="checkbox" name="condition3" id="afterIncident" value="ai">
+                <label for="afterIncident">After incident</label>
+                <input type="checkbox" name="condition4" id="lease" value="lease">
+                <label for="lease">Lease</label>
+                <input type="checkbox" name="condition5" id="total" value="total">
+                <label for="total">Total</label>
+            </div>
+            <div class="fuel">
+                <span><u>Fuel type:</u></span>
+                <input type="radio" name="fuel" id="gas" value="gas">
+                <label for="gas">Gas</label>
+                <input type="radio" name="fuel" id="diesel" value="diesel">
+                <label for="diesel">Diesel</label>
+                <input type="radio" name="fuel" id="electric" value="electric">
+                <label for="electric">Electric</label>
+                <input type="radio" name="fuel" id="combine" value="combine">
+                <label for="combine">Combine (plug-in)</label>
+            </div>
+            <div class="gear-type">
+                <span><u>Gear type:</u></span>
+                <input type="radio" name="gear" id="manual" value="manual">
+                <label for="manual">Manual</label>
+                <input type="radio" name="gear" id="auto" value="auto">
+                <label for="auto">Auto</label>
+                <input type="radio" name="gear" id="robot" value="robot">
+                <label for="robot">Robot</label>
+            </div>
+            <div class="color">
+                <label for="clr"><u>Choose color:</u></label>
+                <input type="color" name="clr" id="clr" value="#a42323">
+            </div>
+            <div class="amenities">
+                <label for="amenities"><u>Amenities:</u></label>
+                <select name="amenities" id="amenities" multiple size="20">
+                    <option value="roofdoor">Roof Door</option>
+                    <option value="leatherInterior">Leather interior</option>
+                    <option value="rims18">R18 rims</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="gti">GTI pack</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="submit">Search</button>
+                <button type="reset">Clean</button>
+            </div>
+        </form>
+    </fieldset>
+    <footer style="background-color: aquamarine;">
+        <div class="schedule">
+            <p><b>Call-center schedule</b></p>
+            <p><i>Monday-Friday:</i> 09<sup>15</sup>-17<sup>45</sup></p>
+            <p><i>Saturday:</i> 10<sup>00</sup>-16<sup>00</sup></p>
+        </div>
+        <div class="address">
+            <p>60 Princess st</p><br>
+        </div>
+        <div class="contacts">
+            <a href="tel:4375571887">Call us</a>
+            <a href="mailto:marketpcar@hotmail.ca">Write to us</a>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

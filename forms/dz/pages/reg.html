@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorisation</title>
+</head>
+
+<body>
+    <header style="background-color: beige;">
+        <nav>
+            <div class="logo-main">
+                <a href="../index.html"><img
+                        src="../../../../../../Hillel/3d_lesson/3d_dz/assets/img/bvc_header_logo.jpg" alt="Main logo"
+                        width="120"></a>
+            </div>
+            <div class="nav-menu">
+                <a href="./auth.html">Authorisation</a>
+                <a href="./search.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>Registration new user</legend>
+        <div class="auth-form">
+            <form action="../action.php" method="get">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" maxlength="20" pattern="[A-Z]{1}[a-z]{2,11}" title="No digits. First must be Big + more than two letter. But all must be less than 20 letters" required><br>
+                    <label for="fname">Last name</label>
+                    <input type="text" name="fname" id="fname" maxlength="20" pattern="[A-Z]{1}[a-z]{2,19}" title="No digits. First must be Big + more than two letter. But all must be less than 20 letters" required><br>
+                </div>
+                <div class="nickname">
+                    <label for="nick">Create nickname</label>
+                    <input type="text" name="nick" id="nick" maxlength="20" required><br>
+                </div>
+                <div class="pwd-block">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd" minlength="8" placeholder="min 8 symbols" required autocomplete="new-password"><br>
+                    <label for="repwd">Repeat password</label>
+                    <input type="password" name="repwd" id="repwd" minlength="8" placeholder="min 8 symbols" required><br>
+                </div>
+                <div class="email">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="emailrpt">Your E-mail (repeat)</label>
+                    <input type="email" name="emailrpt" id="emailrpt">
+                </div>
+                <div class="sex-of-person">
+                    <label for="male">Male</label>
+                    <input type="radio" name="sex" id="male" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="female" value="female">
+                    <label for="cat">Cat</label>
+                    <input type="radio" name="sex" id="cat" value="cat"><br>
+                </div>
+                <div class="date-of-birth">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" name="DateOfBirth" id="dob" required><br>
+                </div>
+                <div class="notice">
+                    <label for="notice">Notices</label>
+                    <textarea name="notice" id="notice" cols="30" rows="10" maxlength="400" placeholder="Few words about you (not requaried)"></textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="LogIn">
+                    <input type="reset" value="It's mistake">
+                </div>
+            </form>
+        </div>
+    </fieldset>
+    <footer style="background-color: aquamarine;">
+        <div class="schedule">
+            <p><b>Call-center schedule</b></p>
+            <p><i>Monday-Friday:</i> 09<sup>15</sup>-17<sup>45</sup></p>
+            <p><i>Saturday:</i> 10<sup>00</sup>-16<sup>00</sup></p>
+        </div>
+        <div class="address">
+            <p>60 Princess st</p><br>
+        </div>
+        <div class="contacts">
+            <a href="tel:4375571887">Call us</a>
+            <a href="mailto:marketpcar@hotmail.ca">Write to us</a>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
