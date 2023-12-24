@@ -24,11 +24,9 @@
             <legend>Produced</legend>
             <label for="man">Manufacture</label>
             <input type="text" name="man" id="man" placeholder="Audi, BMW, Mercedes etc." size="60"><br><br>
-            <label for="year">Year</label>
-            <input type="number" name="yrMin" id="year" min="1950" max="2023" pattern="[0-9]{4}"
-                title="range of your wish" placeholder="4 digits">
-            <input type="number" name="yrMax" id="year" min="1951" max="2023" pattern="[0-9]{4}"
-                title="range of your wish" placeholder="4 digits" value="2023"><br>
+            <span>Year</span>
+            <input type="number" name="yrMin" min="1950" max="2023" title="range of your wish" placeholder="4 digits">
+            <input type="number" name="yrMax" min="1951" max="2023" title="range of your wish" placeholder="4 digits" value="2023"><br>
 
             <span>Type</span>
             <input type="radio" name="Checkbox" id="SUV" value="SUV">
@@ -59,7 +57,7 @@
     </form>
     <br>
     <hr><br>
-    <form action="" method="get">
+    <form action="./options.php" method="get">
         <div>
             <p>Choose option</p>
             <input type="radio" name="option" id="one">
@@ -83,10 +81,10 @@
             <label for="fourth">Fourth option</label><br>
         </div>
         <div><label for="date">Date</label>
-            <input type="date" name="date" id="date" pattern="[2015-2023]{4}-[1-31]{2}-[1-12]{2}">
+            <input type="date" name="date" id="date">
             <input type="submit" value="Yes, of course">
             <input type="reset" value="I'm not sure">
-            <input type="color" name="color" id=""><br><br>
+            <input type="color" name="color"><br><br>
             <label for="asd">Password</label>
             <input type="password" name="asdd" id="asd">
         </div>
