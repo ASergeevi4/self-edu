@@ -36,6 +36,15 @@
 		.select-all-links-form-footer footer a {
 			color: red;
 		}
+
+		.select-all-e-form form > * {
+			box-shadow: 0 0 10px #ff0000;
+		}
+
+		.select-all-input-fields input[type="text"] {
+			box-shadow: 0 0 10px red;
+			font-size: 40px;
+		}
 	</style>
 </head>
 <body>
@@ -49,8 +58,10 @@
 		<li data-name="all-p">p {color: red}</li>
 		<li data-name="all-li">li {color: red}</li>
 
-<!--        <li data-name="select-input-checkbox">Выбрать input типа checkbox</li>-->
-<!--        <li data-name="select-all-links-form-footer">Найти ссылки в "подвале"</li>-->
+       <li data-name="select-input-checkbox">Выбрать input типа checkbox</li>
+       <li data-name="select-all-links-form-footer">Найти ссылки в "подвале"</li>
+       <li data-name="select-all-e-form">Найти все элементы формы</li>
+       <li data-name="select-all-input-fields">Найти все поля ввода</li>
 	</ul>
 	<hr>
 
@@ -88,7 +99,7 @@
         <form action="#">
             <input type="checkbox">
             <input type="checkbox" checked>
-            <input type="text" id="message">
+            <input type="text" id="message" value="Любой текст">
         </form>
 
 
